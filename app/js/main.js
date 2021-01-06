@@ -14,9 +14,17 @@ $(function () {
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
-            arrows: true
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/about/arrow-prewious.png" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/about/arrow-next.png" alt=""></button>',
+            autoplay: true
     });
-
+    $('.clients-page__slider').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        autoplay: true
+     });
 
 
 

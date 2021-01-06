@@ -4,7 +4,8 @@
     background-color: $white;
 }
 
-.featured-page__title {
+.featured-page__title,
+.gallery-page__title {
     color: $brown;
     font-size: 36px;
     text-align: center;
@@ -12,7 +13,8 @@
     margin-bottom: 30px;
 }
 
-.featured-page__desc {
+.featured-page__desc,
+.gallery-page__desc {
     color: $lightgrey;
     text-align: center;
     width: 760px;
@@ -24,39 +26,111 @@
 .featured-page__inner {
     display: flex;
 
-    // justify-content: space-between;
     .tabs {
         width: 360px;
         display: block;
         min-height: 70px;
-        overflow-y: scroll;
+        border-right: 1px solid $lightgrey;
+        position: relative;
+       
+        .icon-umbrella::before {
+            padding-right: 35px;
+            font-size: 48px;
+            position: absolute;
+            top: 22px;
+            left: 10px;
+        }
+        .icon-briefcase::before {
+            padding-right: 35px;
+            font-size: 48px;
+            position: absolute;
+            top: 22px;
+            left: 10px;
+        }
+        .icon-leaf::before {
+            padding-right: 35px;
+            font-size: 48px;
+            position: absolute;
+            top: 22px;
+            left: 10px;
+        }
+        .icon-mobile-phone::before {
+            padding-right: 35px;
+            font-size: 48px;
+            position: absolute;
+            top: 22px;
+            left: 10px;
+        }
 
+        span.active::before {
+            font-size: 48px;
+            color: $lightgreen;
+            position: absolute;
+            top: 22px;
+            left: 10px;
+        }
+        span {
+            position: relative;
+        }
         .tab {
             width: 100%;
             display: block;
-            padding-right: 50px;
+            padding: 28px;
             text-align: center;
             cursor: pointer;
-            font-size: 20px;
             color: #9fa9a9;
-            margin-bottom: 60px;
-
+            margin: 30px 0;
         }
-
+        .tab__name {
+            font-family: 'Raleway-Regular';
+            font-size: 20px;
+        }
         .tab.active {
-            border-right: 1px solid red;
+            border-right: 10px solid $lightgreen;
+            color: $brown;
+            display: block;
         }
     }
-
-    .tabs span {
-        padding-left: 80px;
-    }
-
+   
     .tab_content {
         width: 800px;
         padding-left: 135px;
+        .tab-item {
+            display: none;
+        }
+        .tab-item:first-child {
+            display: block;
+        }
+        .tab-item__images {
+            margin: 0 auto;
+            width: 685px;
+            text-align: center;
+        }
+
+        .icon-umbrella,
+        .icon-briefcase,
+        .icon-leaf,
+        .icon-mobile-phone {
+            color: $lightgreen;
+            font-size: 220px;
+            margin-bottom: 75px;
+        }
+
+        .tab-item__title {
+            font-size: 24px;
+            font-family: 'Raleway-Bold';
+            color: $brown;
+            margin-bottom: 30px;
+        }
+        .tab-item__text {
+            width: 685px;
+            color: $lightgrey;
+            line-height: 24px;
+        }
     }
 }
 
 
+
 // end featured
+

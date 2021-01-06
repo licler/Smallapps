@@ -10,6 +10,13 @@ $(function () {
             return false;
         });
 
+    $('.gallery-page__items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true
+    });
+
 
 
 

@@ -8,6 +8,8 @@
 .header__top-wrapper {
     display: flex;
     justify-content: space-between;
+    height: 110px;
+    align-items: center;
 }
 
 .header__top-inner {
@@ -36,8 +38,6 @@
 
 .header__top-info {
     display: flex;
-    height: 110px;
-    align-items: center;
     font-size: 18px;
 
     a+a {
@@ -66,7 +66,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 730px;
-    padding: 170px 0;
+    padding: 120px 0 0;
+}
+.download-page__wrapper {
+    display: flex;
+    // justify-content: space-between;
+}
+.download-page__inner {
+    margin-top: 50px;
+}
+.download-page__images {
+    margin-left: -200px;
 }
 
 .download-page__title {
@@ -92,7 +102,9 @@
 }
 
 
-.header__top-btn, .menu__big-btn {
+
+.menu__big-btn,
+.header__top-btn {
     display: none;
 }
 // end header

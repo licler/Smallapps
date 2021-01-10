@@ -222,6 +222,7 @@
 
     .about-page__images {
         order: -1;
+        text-align: center;
     }
 }
 
@@ -276,12 +277,27 @@
     }
 
     .about-page_bg {
+        text-align: center;
         img {
             width: 286px;
             height: 390px;
         }
     }
 
+}
+@media (max-width: 345px) {
+    .about-page_bg {
+        img {
+            width: 264px;
+            height: 360px;
+        }
+    }
+    .about-page__title {
+        font-size: 20px;
+    }
+    .about-page__desc {
+        font-size: 18px; 
+    }
 }
 
 // end about-page
@@ -452,14 +468,19 @@
 @media (max-width: 990px) {
     .header__top {
         height: 70px;
+        position: relative;
     }
+
+    .header__top-wrapper {
+        height: 70px;
+        align-items: center;
+    }
+
     .header__top-inner {
         height: 70px;
         align-items: center;
     }
-    .header__top-info {
-        height: 70px;
-    }
+
     .header__nav {
         position: relative;
     }
@@ -486,7 +507,7 @@
         background-color: #fff;
         left: -238px;
         text-align: center;
-        top: 55px;
+        top: 35px;
 
         li {
             display: block;
@@ -525,7 +546,7 @@
 
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
     .header__top-btn {
         display: block;
         width: 70px;
@@ -535,24 +556,189 @@
         right: 0;
         top: 0;
         overflow-x: hidden;
+        z-index: 6;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: #fff;
+        }
     }
+
     // Уезжающее меню
     .header__top-info {
         position: absolute;
-        right: 250px;
+        right: 50px;
         transition: all 1s;
-        background-color: #fff;
+        background-color: $white;
+        transform: translateX(150%);
+
         &.active {
-            right: 0;
-            left: 100%;
+            right: 78px;
+            // left: 100%;
             z-index: 3;
+            transform: translateX(0);
         }
+    }
+
+    .header__logo img {
+        width: 110px;
+    }
+
+    .menu__big-btn {
+        left: -187px;
+    }
+
+    .menu-list {
+        left: -203px;
+    }
+
+    .header__top-info a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 595px) {
+    .header__top-info .icon-envelope-o:before {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .icon-phone-square {
+        display: none;
+    }
+
+    .header__top-tel {
+        display: none;
+    }
+}
+
+@media (max-width: 455px) {
+    .header__top-info {
+        transform: translateY(288%);
+        background-color: transparent;
+        top: -3px;
+        right: -200px;
+
+        &.active {
+            right: 100px;
+            z-index: 3;
+            transform: translateY(288%);
+        }
+    }
+}
+
+// end header
+
+// start download-page
+
+@media (max-width: 1260px) {
+    .download-page__images {
+        margin-left: -290px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .download-page__images {
+        img {
+            width: 543px;
+            height: 350px;
+        }
+    }
+
+    .download-page__images {
+        margin-left: 0px;
+
+    }
+
+    .download-page__wrapper {
+        flex-direction: column;
+    }
+
+    .download-page {
+        padding: 27px 0 0;
+    }
+
+    .download-page__inner {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 585px) {
+    .download-page__title {
+        width: 350px;
+        font-size: 28px;
+    }
+
+    .download-page__title span {
+        margin-top: 10px;
+    }
+
+    .download-page__images {
+        margin-top: 18px;
+
+        img {
+            width: 310px;
+            height: 200px;
+        }
+    }
+
+    .download-page {
+        height: 580px;
+    }
+}
+
+@media (max-width: 485px) {
+    .download-page__desc {
+        width: 300px;
+    }
+
+    .download-page__btn {
+        width: 187px;
+        padding: 5px 16px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .download-page {
+        height: 602px;
+    }
+}
+
+@media (max-width: 380px) {
+    .download-page__title {
+        width: 280px;
+        font-size: 22px;
+    }
+
+    .download-page {
+        height: 588px;
+    }
+}
+
+@media (max-width: 350px) {
+    .download-page__images {
+        img {
+            width: 250px;
+            height: 161px;
+        }
+    }
+
+    .download-page {
+        height: 549px;
+    }
+
+    .download-page__desc {
+        width: 280px;
     }
 }
 
 
 
-
-
-
-// end header
+// end download-page

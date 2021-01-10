@@ -17,7 +17,7 @@ $(function () {
             arrows: true,
             prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/about/arrow-prewious.png" alt=""></button>',
             nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/about/arrow-next.png" alt=""></button>',
-            autoplay: false,
+            autoplay: true,
             responsive: [
                 {
                   breakpoint: 1100,
@@ -34,7 +34,6 @@ $(function () {
                       slidesToShow: 1,
                       slidesToScroll: 1,
                       infinite: true,
-                      autoplay: false,
                       arrows: false
                     }
                   }
@@ -45,7 +44,7 @@ $(function () {
         infinite: true,
         arrows: false,
         dots: true,
-        autoplay: false,
+        autoplay: true,
         responsive: [
             {
               breakpoint: 650,

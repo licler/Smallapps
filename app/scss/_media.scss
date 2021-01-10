@@ -23,6 +23,9 @@
     .featured-page__inner .tabs .tab {
         padding: 28px 100px;
     }
+    .tabs__line-main {
+        display: none;
+    }
 }
 
 @media (max-width: 865px) {
@@ -593,7 +596,7 @@
     }
 
     .menu-list {
-        left: -203px;
+        left: -205px;
     }
 
     .header__top-info a {

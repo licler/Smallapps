@@ -25,12 +25,13 @@
 
 .featured-page__inner {
     display: flex;
+    
 
     .tabs {
         width: 360px;
         display: block;
         min-height: 70px;
-        border-right: 1px solid $lightgrey;
+        // border-right: 1px solid $lightgrey;
         position: relative;
        
         .icon-umbrella::before {
@@ -92,6 +93,7 @@
         }
     }
    
+   
     .tab_content {
         width: 800px;
         padding-left: 135px;
@@ -128,8 +130,8 @@
             line-height: 24px;
         }
     }
-}
 
+}
 
 
 // end featured

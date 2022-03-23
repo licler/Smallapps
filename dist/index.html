@@ -10,7 +10,6 @@
 
 <body>
     <header class="header">
-        <div class="header__top">
             <div class="container">
                 <div class="header__top-wrapper">
                     <div class="header__top-inner">
@@ -18,33 +17,33 @@
                             <a class="header__logo-link" href="#"><img src="images/header/logo.jpg" alt=""></a>
                         </div>
                         <div class="header__nav">
-                            <nav class="menu">
-                                <div class="menu__big-btn">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
+                            <div class="menu__big-btn">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <nav class="menu" id="nav">
                                 <ul class="menu-list">
-                                    <li><a href="#">Home </a></li>
-                                    <li><a href="#">Features </a></li>
-                                    <li><a href="#">Screenshot </a></li>
-                                    <li><a href="#">Gallery</a></li>
+                                    <li><a data-scroll="#home" class="menu-list__link" href="#">Home </a></li>
+                                    <li><a data-scroll="#features" class="menu-list__link" href="#">Features </a></li>
+                                    <li><a data-scroll="#screenshot" class="menu-list__link" href="#">Screenshot </a></li>
+                                    <li><a data-scroll="#gallery" class="menu-list__link" href="#">Gallery</a></li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                     <div class="header__top-info">
                         <span class="icon-phone-square"></span><a class="header__top-tel"
-                            href="tel:800123456">800-123-456</a>
+                            href="tel:800122222">800-122-122</a>
                         <span class="icon-envelope-o"></span><a class="header__top-email"
                             href="mailto:smallapps@gmail.com">smallapps@gmail.com</a>
                     </div>
                     <div class="header__top-btn icon-mobile-phone"></div>
                 </div>
             </div>
-        </div>
+       
     </header>
-    <section class="download-page" style="background-image: url('images/header/download-main.jpg');">
+    <section class="download-page" style="background-image: url('images/header/download-main.jpg');" id = "home">
         <div class="container">
             <div class="download-page__wrapper">
                 <div class="download-page__inner">
@@ -73,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="featured-page">
+    <section class="featured-page" id="features">
         <div class="container">
             <div class="featured-page__title">
                 Heading Feature title goes here
@@ -202,7 +201,7 @@
             </div>
         </div>
     </section>
-    <section class="about-page">
+    <section class="about-page" >
         <div class="container">
             <div class="about-page__wrapper">
                 <div class="about-page__inner">
@@ -231,7 +230,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery-page">
+    <section class="gallery-page" id="gallery">
         <div class="container">
             <div class="gallery-page__title">
                 Our Latest screenshots gallery
@@ -392,7 +391,7 @@
             </div>
         </div>
     </section>
-    <section class="clients-page">
+    <section class="clients-page" id="screenshot">
         <div class="container">
             <div class="clients-page__slider">
                 <div class="clients-page__wrapper">
@@ -453,7 +452,7 @@
                 </div>
             </div>
             <form class="email-form">
-                <input class="email-input" type="text" placeholder="your email address" required>
+                <input name = "" class="email-input" type="email" placeholder="Your email address" required>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -486,8 +485,7 @@
 
 
 
-
-
+  <span class = "menu__arrow"><span>
 
 
 

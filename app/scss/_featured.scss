@@ -1,6 +1,6 @@
 // start featured
 .featured-page {
-    padding: 90px 0;
+    padding: 110px 0;
     background-color: $white;
 }
 
@@ -25,15 +25,11 @@
 
 .featured-page__inner {
     display: flex;
-    
-
     .tabs {
         width: 360px;
         display: block;
         min-height: 70px;
-        // border-right: 1px solid $lightgrey;
         position: relative;
-       
         .icon-umbrella::before {
             padding-right: 35px;
             font-size: 48px;
@@ -86,9 +82,13 @@
             font-family: 'Raleway-Regular';
             font-size: 20px;
         }
+        .tab__name.active {
+            color: #5dca88;
+        }
         .tab.active {
             border-right: 10px solid $lightgreen;
-            color: $brown;
+            color: #5dca88;
+            font-weight: 700;
             display: block;
         }
     }

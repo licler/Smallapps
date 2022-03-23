@@ -1,8 +1,12 @@
 // start header
-.header__top {
-    background-color: #fff;
-    height: 110px;
-
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 456;
+    background-color:#fff;
+    box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .header__top-wrapper {
@@ -22,15 +26,30 @@
 .menu-list {
     font-size: 14px;
     color: $grey;
-
     li {
         display: inline-block;
     }
-
     li+li {
         margin-left: 30px;
     }
 }
+.menu-list li:hover{
+    background-color: #296d63;
+    padding: 20px;
+    color: #fff;
+    transition: all .4s cubic-bezier(0.29, 0.79, 1, 1);
+    
+}
+.menu-list li:hover a {
+    color: #fff;
+    transition: all .4s cubic-bezier(0.29, 0.79, 1, 1)
+}
+.menu-list__link--activ {
+    color: #105063;
+    letter-spacing: 3.4px;
+    font-weight: 700;
+}
+
 
 .header__logo {
     margin-right: 30px;
@@ -67,16 +86,23 @@
     background-size: cover;
     height: 730px;
     padding: 120px 0 0;
+    position: relative;
 }
+
 .download-page__wrapper {
     display: flex;
-    // justify-content: space-between;
+  
 }
 .download-page__inner {
     margin-top: 50px;
 }
+
 .download-page__images {
     margin-left: -200px;
+    img{
+        position: absolute; 
+    }
+  
 }
 
 .download-page__title {
@@ -85,7 +111,6 @@
     font-size: 36px;
     font-family: 'Raleway-Bold';
     margin-bottom: 7px;
-
     span {
         font-family: 'Raleway-Light';
         margin-bottom: 35px;
@@ -96,7 +121,7 @@
     font-size: 14px;
     font-family: 'Raleway-Regular';
     color: $blue;
-    width: 450px;
+    max-width: 450px;
     line-height: 24px;
     margin-bottom: 45px;
 }
@@ -107,4 +132,5 @@
 .header__top-btn {
     display: none;
 }
+
 // end header

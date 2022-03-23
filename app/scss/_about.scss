@@ -12,7 +12,9 @@
 
 .about-page__inner {
     max-width: 485px;
+    width: 100%;
     margin-top: 70px;
+    padding: 20px;
 }
 
 .about-page__title {
@@ -45,6 +47,15 @@
     line-height: 24px;
     color: $color-grey;
     margin-bottom: 50px;
+}
+.anim-show {
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.anim-show.active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 // end about-page

@@ -1,6 +1,6 @@
 // start gallery-page
 .gallery-page {
-    padding: 90px 0 110px;
+    padding: 110px 0;
 }
 
 .gallery-page__images {
@@ -35,6 +35,9 @@
         right: 4px;
         z-index: 5;
         top: 285px;
+    }
+    .slick-btn slick-next .slick-arrow:hover{
+       color: red;
     }
 
 }

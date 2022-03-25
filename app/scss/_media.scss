@@ -102,7 +102,17 @@
     .featured-page__inner .tab_content .icon-briefcase,
     .featured-page__inner .tab_content .icon-leaf,
     .featured-page__inner .tab_content .icon-mobile-phone {
-        font-size: 160px;
+        font-size: 100px;
+    }
+    .featured-page__inner .tab_content .icon-umbrella, 
+    .featured-page__inner .tab_content .icon-briefcase, 
+    .featured-page__inner .tab_content .icon-leaf, 
+    .featured-page__inner .tab_content .icon-mobile-phone {
+        margin-bottom: 40px;
+    }
+    .tab-item__text {
+    font-size: 14px;
+    line-height: 20px;
     }
 
 }
@@ -116,6 +126,12 @@
     .featured-page__title {
         padding-left: 0;
         margin-left: 15px;
+        font-size: 20px;
+
+    }
+    .featured-page__desc {
+        margin-top: -20px;
+        font-size: 14px;
     }
 
     .featured-page__inner .tab_content .tab-item__images {
@@ -134,6 +150,9 @@
     .featured-page__inner .tabs {
         width: 380px;
         padding-left: 15px;
+    }
+    .featured-page {
+        padding: 43px 0;
     }
 }
 
@@ -261,7 +280,7 @@
 }
 @media (max-width: 410px) {
     .about-page__title {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .about-page__title::after {
@@ -269,7 +288,8 @@
     }
 
     .about-page__desc {
-        font-size: 25px;
+        font-size: 18px;
+        margin-bottom: 25px;
     }
 
     .about-page__btn {
@@ -373,6 +393,9 @@
 
     .gallery-page__desc {
         width: 450px;
+    }
+    .gallery-page {
+        padding: 30px 0;
     }
 }
 
@@ -727,9 +750,19 @@
          right: 10px;
         width: 650px;
         height: 419px;
+        bottom: 0px   
         }
      }
 }
+
+@media (max-width: 955px) {
+    .download-page__images {
+        img{
+        bottom: 0px        
+        }
+     }
+}
+
 @media (max-width: 795px) {
     .download-page__images {
         img{
@@ -784,7 +817,7 @@
         }
     }
     .download-page {
-        height: 602px;
+        height: 610px;
     }
     .download-page__wrapper {
         margin-top: -66px;
@@ -808,9 +841,9 @@
         font-size: 22px;
     }
 
-    .download-page {
-        height: 588px;
-    }
+    // .download-page {
+    //     height: 588px;
+    // }
 }
 
 @media (max-width: 375px) {
